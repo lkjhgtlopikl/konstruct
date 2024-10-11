@@ -1,0 +1,192 @@
+$color1: #48555B;
+$color2: #00A4E5;
+$color1: #E6E6E6;
+$mywidth: 941px;
+
+body {
+    font-family: OpenSans, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color1;
+}
+header {
+    background-image: url(img/bg.png);
+    width: 1440px;
+    height: 768px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h1 {
+        font-family: BebasNeue, sans-serif;
+        font-size: 60px;
+        letter-spacing: 5.71px;
+    }
+    p {
+        font-weight: 600;
+    }
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(/fonts/Open_Sans/OFL.txt);
+}
+
+.header {
+    width: 101px;
+    height: 23px;
+}
+
+nav {
+    height: 65px;
+    width: 1440px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1.09px;
+}
+ul {
+    display: flex;
+    height: 65px;
+    width: 620px;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav {
+    width: 80px;
+    height: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00A4E5;
+}
+.about {
+    width: 941px;
+    height: 344px;
+    display: grid;
+    margin-bottom: 118px;
+    grid-template-areas:
+        'h h'
+        'info cards';
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    grid-area: info;
+
+    h3 {
+        font-weight: 700;
+    }
+
+    p {
+        letter-spacing: 0.19px;
+        line-height: 23px;
+    }
+}
+
+.cards {
+    display: grid;
+    padding: 3%;
+    grid-area: cards;
+    grid-template-columns: 140px 140px 140px;
+    grid-gap: 20px;
+    align-items: end;
+    justify-items: end;
+}
+
+.h {
+    font-size: 18px;
+    width: 941px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    grid-area: h;
+
+    h2 {
+        letter-spacing: 2.31px;
+        font-weight: 700;
+    }
+}
+
+#c1 {
+    background-image: url(img/plan.png);
+}
+
+#c2 {
+    background-image: url(img/manage.png);
+}
+
+#c3 {
+    background-image: url(img/build.png);
+}
+
+.card {
+    width: 140px;
+    height: 224px;
+    font-size: 29px;
+    color: white;
+    letter-spacing: 0.19px;
+    font-weight: 800;
+
+
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background: #00A4E5;
+}
+
+.tit {
+    grid-area: tit;
+    display: flex;
+    width: 618px;
+}
+
+.service {
+    width: 295px;
+    height: 330px;
+    border: 1px solid #E6E6E6 ;
+}
+
+.services {
+    width: 941px;
+    height: 446px;
+    display: grid;
+    grid-template-areas:
+        'h1 tit tit'
+        'items items items';
+}
+.h1{
+    grid-area: h1;
+    height: 116px;
+}
+.items{
+    display: flex;
+    grid-area: items;
+    grid-template-columns: 295px 295px 295px;
+    grid-gap: 28px;
+}
+button {
+    width: 150px;
+    height: 40px;
+    background: #00A4E5;
+    color: white;
+    border: none;
+}
