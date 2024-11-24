@@ -17,13 +17,11 @@ header {
   align-items: center;
   justify-content: space-around;
 }
-
 header h1 {
   font-family: BebasNeue, sans-serif;
   font-size: 60px;
   letter-spacing: 5.71px;
 }
-
 header p {
   font-weight: 600;
 }
@@ -32,12 +30,10 @@ header p {
   font-family: BebasNeue;
   src: url(/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
-
 @font-face {
   font-family: OpenSans;
   src: url(/fonts/Open_Sans/OFL.txt);
 }
-
 .header {
   width: 101px;
   height: 23px;
@@ -52,8 +48,7 @@ nav {
   align-items: center;
   letter-spacing: 1.09px;
 }
-
-ul {
+nav ul {
   display: flex;
   height: 65px;
   width: 620px;
@@ -61,17 +56,14 @@ ul {
   justify-content: space-around;
   align-items: center;
 }
-
-.nav {
+nav .nav {
   width: 80px;
   height: 18px;
 }
-
-a {
+nav a {
   text-decoration: none;
 }
-
-a:hover {
+nav a:hover {
   color: #00A4E5;
 }
 
@@ -82,23 +74,19 @@ a:hover {
   margin-bottom: 118px;
   grid-template-areas: "h h" "info cards";
 }
-
-.info {
+.about .info {
   display: flex;
   flex-direction: column;
   grid-area: info;
 }
-
-.info h3 {
+.about .info h3 {
   font-weight: 700;
 }
-
-.info p {
+.about .info p {
   letter-spacing: 0.19px;
   line-height: 23px;
 }
-
-.cards {
+.about .cards {
   display: grid;
   padding: 3%;
   grid-area: cards;
@@ -107,8 +95,7 @@ a:hover {
   align-items: end;
   justify-items: end;
 }
-
-.h {
+.about .h {
   font-size: 18px;
   width: 941px;
   display: flex;
@@ -117,22 +104,9 @@ a:hover {
   margin: 3%;
   grid-area: h;
 }
-
-.h h2 {
+.about .h h2 {
   letter-spacing: 2.31px;
   font-weight: 700;
-}
-
-#c1 {
-  background-image: url(img/plan.png);
-}
-
-#c2 {
-  background-image: url(img/manage.png);
-}
-
-#c3 {
-  background-image: url(img/build.png);
 }
 
 .card {
@@ -153,12 +127,6 @@ a:hover {
   background: #00A4E5;
 }
 
-.tit {
-  grid-area: tit;
-  display: flex;
-  width: 618px;
-}
-
 .service {
   width: 295px;
   height: 330px;
@@ -173,13 +141,11 @@ a:hover {
   display: grid;
   grid-template-areas: "h1 tit tit" "items items items";
 }
-
-.h1 {
+.services .h1 {
   grid-area: h1;
   height: 116px;
 }
-
-.items {
+.services .items {
   display: flex;
   grid-area: items;
   grid-template-columns: 295px 295px 295px;
@@ -199,12 +165,11 @@ button {
 .getInTouch {
   width: 1440px;
   height: 499px;
-  background-image: url(img/bg\ \(1\).png);
+  background-image: url(img/bg\ 1.png);
   padding: 120px 545px;
   box-sizing: border-box;
   text-align: center;
 }
-
 .getInTouch p {
   letter-spacing: 0.15px;
   line-height: 36px;
@@ -224,18 +189,16 @@ button {
   justify-content: space-around;
   padding: 30px 377px;
   box-sizing: border-box;
-
+}
+.newslatter p {
+  letter-spacing: 0.85px;
+  font-size: 22px;
 }
 
 input {
   height: 40px;
   width: 250px;
   border: none;
-}
-
-.newslatter p {
-  letter-spacing: 0.85px;
-  font-size: 22px;
 }
 
 .socials {
@@ -247,7 +210,6 @@ input {
   padding: 42px 249px;
   box-sizing: border-box;
 }
-
 .socials .item {
   width: 235px;
 }
@@ -265,17 +227,12 @@ input {
 .list {
   width: 58px;
 }
-footer{
+
+footer {
   background: #171819;
   width: 1440px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-}
-@media screen and (max-width:912px){
-  header{
-    width: 912px;
-  }
-}
+}/*# sourceMappingURL=style1.css.map */

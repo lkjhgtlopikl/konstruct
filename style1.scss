@@ -1,31 +1,39 @@
+$color1: #48555B;
+$color2: #00A4E5;
+$color3: #E6E6E6; 
+$mywidth: 941px;
+$mywidth1: 1440px;
+$padding1: 120px;
+$padding2: 545px;
+
 body {
   font-family: OpenSans, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #48555B;
+  color: $color1; 
 }
 
 header {
   background-image: url(img/bg.png);
   background-repeat: no-repeat;
-  width: 1440px;
+  width: $mywidth1;
   height: 768px;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
 
-header h1 {
-  font-family: BebasNeue, sans-serif;
-  font-size: 60px;
-  letter-spacing: 5.71px;
-}
+  h1 {
+    font-family: BebasNeue, sans-serif;
+    font-size: 60px;
+    letter-spacing: 5.71px;
+  }
 
-header p {
-  font-weight: 600;
+  p {
+    font-weight: 600;
+  }
 }
 
 @font-face {
@@ -45,94 +53,82 @@ header p {
 
 nav {
   height: 65px;
-  width: 1440px;
+  width: $mywidth1;
   display: flex;
   font-weight: bold;
   justify-content: space-around;
   align-items: center;
   letter-spacing: 1.09px;
-}
 
-ul {
-  display: flex;
-  height: 65px;
-  width: 620px;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
-}
+  ul {
+    display: flex;
+    height: 65px;
+    width: 620px;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.nav {
-  width: 80px;
-  height: 18px;
-}
+  .nav {
+    width: 80px;
+    height: 18px;
+  }
 
-a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
 
-a:hover {
-  color: #00A4E5;
+    &:hover {
+      color: $color2;
+    }
+  }
 }
 
 .about {
-  width: 941px;
+  width: $mywidth;
   height: 344px;
   display: grid;
   margin-bottom: 118px;
   grid-template-areas: "h h" "info cards";
-}
 
-.info {
-  display: flex;
-  flex-direction: column;
-  grid-area: info;
-}
+  .info {
+    display: flex;
+    flex-direction: column;
+    grid-area: info;
 
-.info h3 {
-  font-weight: 700;
-}
+    h3 {
+      font-weight: 700;
+    }
 
-.info p {
-  letter-spacing: 0.19px;
-  line-height: 23px;
-}
+    p {
+      letter-spacing: 0.19px;
+      line-height: 23px;
+    }
+  }
 
-.cards {
-  display: grid;
-  padding: 3%;
-  grid-area: cards;
-  grid-template-columns: 140px 140px 140px;
-  grid-gap: 20px;
-  align-items: end;
-  justify-items: end;
-}
+  .cards {
+    display: grid;
+    padding: 3%;
+    grid-area: cards;
+    grid-template-columns: 140px 140px 140px;
+    grid-gap: 20px;
+    align-items: end;
+    justify-items: end;
+  }
 
-.h {
-  font-size: 18px;
-  width: 941px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3%;
-  grid-area: h;
-}
+  .h {
+    font-size: 18px;
+    width: $mywidth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    grid-area: h;
 
-.h h2 {
-  letter-spacing: 2.31px;
-  font-weight: 700;
-}
-
-#c1 {
-  background-image: url(img/plan.png);
-}
-
-#c2 {
-  background-image: url(img/manage.png);
-}
-
-#c3 {
-  background-image: url(img/build.png);
+    h2 {
+      letter-spacing: 2.31px;
+      font-weight: 700;
+    }
+  }
 }
 
 .card {
@@ -150,13 +146,7 @@ a:hover {
 .line {
   width: 50px;
   height: 2px;
-  background: #00A4E5;
-}
-
-.tit {
-  grid-area: tit;
-  display: flex;
-  width: 618px;
+  background: $color2;
 }
 
 .service {
@@ -164,32 +154,32 @@ a:hover {
   height: 330px;
   padding: 38px 23px;
   box-sizing: border-box;
-  border: 1px solid #E6E6E6;
+  border: 1px solid $color3;
 }
 
 .services {
-  width: 941px;
+  width: $mywidth;
   height: 446px;
   display: grid;
   grid-template-areas: "h1 tit tit" "items items items";
-}
 
-.h1 {
-  grid-area: h1;
-  height: 116px;
-}
+  .h1 {
+    grid-area: h1;
+    height: 116px;
+  }
 
-.items {
-  display: flex;
-  grid-area: items;
-  grid-template-columns: 295px 295px 295px;
-  grid-gap: 28px;
+  .items {
+    display: flex;
+    grid-area: items;
+    grid-template-columns: 295px 295px 295px;
+    grid-gap: 28px;
+  }
 }
 
 button {
   width: 150px;
   height: 40px;
-  background: #00A4E5;
+  background: $color2; 
   color: white;
   padding: 11px 29px;
   box-sizing: border-box;
@@ -197,24 +187,24 @@ button {
 }
 
 .getInTouch {
-  width: 1440px;
+  width: $mywidth1;
   height: 499px;
-  background-image: url(img/bg\ \(1\).png);
-  padding: 120px 545px;
+  background-image: url(img/bg\ 1.png);
+  padding: $padding1 $padding2;
   box-sizing: border-box;
   text-align: center;
-}
 
-.getInTouch p {
-  letter-spacing: 0.15px;
-  line-height: 36px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #48555B;
+  p {
+    letter-spacing: 0.15px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $color1; 
+  }
 }
 
 .newslatter {
-  width: 1440px;
+  width: $mywidth1;
   height: 100px;
   background: #171819;
   color: white;
@@ -225,6 +215,10 @@ button {
   padding: 30px 377px;
   box-sizing: border-box;
 
+  p {
+    letter-spacing: 0.85px;
+    font-size: 22px;
+  }
 }
 
 input {
@@ -233,23 +227,18 @@ input {
   border: none;
 }
 
-.newslatter p {
-  letter-spacing: 0.85px;
-  font-size: 22px;
-}
-
 .socials {
   background: #141A20;
-  width: 1440px;
+  width: $mywidth1;
   height: 240px;
   color: white;
   display: flex;
   padding: 42px 249px;
   box-sizing: border-box;
-}
 
-.socials .item {
-  width: 235px;
+  .item {
+    width: 235px;
+  }
 }
 
 #i1 {
@@ -265,17 +254,12 @@ input {
 .list {
   width: 58px;
 }
-footer{
+
+footer {
   background: #171819;
-  width: 1440px;
+  width: $mywidth1;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-}
-@media screen and (max-width:912px){
-  header{
-    width: 912px;
-  }
 }
